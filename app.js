@@ -79,3 +79,13 @@ textarea.addEventListener("keydown", function(e) {
     encriptar();
     fondo();
 });
+
+textarea.addEventListener("input", () => {
+  const currentValue = textarea.value;
+  textarea.value = currentValue.toLowerCase();
+});
+textarea.addEventListener("input", () => {
+  const currentValue = textarea.value;
+  const newValue = currentValue.replace(/[^a-zA-Z\s]/g, "");
+  textarea.value = newValue;
+});
