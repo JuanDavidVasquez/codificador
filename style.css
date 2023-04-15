@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 70vh;
+}
+.encriptador{
+    flex-basis: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    height: 100%;
+    min-height: 55vh;
+}
+.dencriptador{
+    flex-basis: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    word-break: break-word;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.accione,.acciones,.copiar{
+    background: #EB4521;
+    color: #fff;
+    width: 11rem;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all .5s ease-out;
+}
+.accione:hover,.acciones:hover,.copiar:hover{
+    filter: drop-shadow(2px 4px 6px black);
+}
+h1{
+    position: inherit;
+    top: 100;
+    text-align: center;
+    text-shadow: -11px 20px 6px #0909095e;
+    font-size: 2rem;
+    background: -webkit-linear-gradient(330deg, #081692 15%, #282875 25%, #21126e 50%, #112647 75%, #003ab6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#resultado{
+    display: flex;
+    text-align: center;
+    min-height: 50vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: cursive;
+    word-wrap: break-word;
+    padding: 2rem;
+}
+label{
+    font-size: 2rem;
+}
+textarea{
+    border: none;
+    border-bottom: 0.5px solid #ccc;
+}
+
+
+@media (max-width: 1085px) {
+    .container{
+        min-height: 40vh;
+        gap: 2rem;
+        padding: 3rem 0rem;
+    }
+    h1{
+        position: inherit;
+    }
+    .encriptador{
+        min-height: 20vh;
+    }
+    #resultado{
+        min-height: 20vh;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+    }
+    .accione, .acciones, .copiar {
+        width: 100%;
+        transition: all .5s ease-out;
+    }
+}
+
+.containerNu{
+    background-color: #007ced;
+      background: linear-gradient(to bottom, #007ced 1%,#cce7ff 100%);
+  }
+  #cloud-intro{
+    position: relative;
+    min-height: 100vh;
+    max-height: -webkit-fill-available;
+    background: url(https://static.radulescu.me/examples/clouds/clouds1000.png);
+    background: url(https://static.radulescu.me/examples/clouds/clouds1000.png) 0 200px,
+                url(https://static.radulescu.me/examples/clouds/clouds1200_1.png) 0 300px,
+                url(https://static.radulescu.me/examples/clouds/clouds1000_blur3.png) 100px 250px;
+      animation: wind 20s linear infinite;
+  }
+  @keyframes wind{
+    0% {
+      background-position: 0 200px, 0 300px, 100px 250px;
+    }
+    100% {
+      background-position: 1000px 200px, 1200px 300px, 1100px 250px;
+    }
+  
+  }

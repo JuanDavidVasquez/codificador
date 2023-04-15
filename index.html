@@ -1,0 +1,40 @@
+<html>
+
+<head>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="containerNu">
+    <div id="cloud-intro">
+      <header class="header">
+        <h1>Juan David Vasquez</h1>
+      </header>
+
+      <div class="container">
+        <div class="encriptador">
+          <h1>Encriptador/Desencriptador de texto</h1>
+          <form>
+            <label for="texto">Ingresa el texto:</label><br>
+            <textarea type="text" id="texto" name="texto" rows="4" cols="50"></textarea><br>
+            <div class="botones">
+              <input class="accione" value="Encriptar">
+              <input class="acciones" value="Desencriptador">
+              <input class="copiar" value="Copy">
+            </div>
+          </form>
+        </div>
+        <div class="dencriptador">
+          <h1>Resultado</h1>
+          <div id="resultado"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+    integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
