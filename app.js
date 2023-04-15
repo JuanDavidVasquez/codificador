@@ -1,8 +1,3 @@
-/* e => enter
-i => imes
-a => ai
-o => ober
-u => ufat */
 function animar() {
   gsap.fromTo(
     "#resultado",
@@ -10,7 +5,6 @@ function animar() {
     { duration: 1, ease: "bounce.out", opacity: 1, y: "0%" }
   );
 }
-
 function encriptar() {
     gsap.fromTo(
         "#resultado",
@@ -18,7 +12,6 @@ function encriptar() {
         { duration: 1, ease: "bounce.out", opacity: 1}
       );
   var texto = document.getElementById("texto").value;
-
   const llaves = {
     e: "enter",
     i: "imes",
@@ -33,9 +26,7 @@ function encriptar() {
       llaves[letra]
     );
   }
-
   document.getElementById("resultado").innerHTML = textoEncriptado;
-
   return false;
 }
 
