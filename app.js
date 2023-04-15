@@ -1,3 +1,4 @@
+'use strict'
 function animar() {
   gsap.fromTo(
     "#resultado",
