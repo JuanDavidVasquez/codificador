@@ -77,7 +77,6 @@ copiar.addEventListener("click", copiando);
 var textarea = document.querySelector('textarea');
 textarea.addEventListener("keydown", function(e) {
     encriptar();
-    fondo();
 });
 
 textarea.addEventListener("input", () => {

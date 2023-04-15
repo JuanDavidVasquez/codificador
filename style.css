@@ -81,8 +81,12 @@ label{
 textarea{
     border: none;
     border-bottom: 0.5px solid #ccc;
+    background: transparent;
 }
-
+textarea:focus {
+    background-color: rgb(34, 48, 52);
+    color: #cce7ff;
+}
 
 @media (max-width: 1085px) {
     .container{
